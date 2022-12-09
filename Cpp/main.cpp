@@ -61,9 +61,6 @@ int main()
     // Day 07
     std::cout << "\n---------------- Day 07 ----------------" << std::endl;
     std::map<std::string, int> folder_sizes = day07::parse_input("../Inputs/input07.txt");
-    // for (const auto &[key, value] : folder_sizes) {
-    //     std::cout << '[' << key << "] = " << value << std::endl;
-    // }
     std::cout << day07::part1(folder_sizes) << std::endl;
     std::cout << day07::part2(folder_sizes) << std::endl;
 
