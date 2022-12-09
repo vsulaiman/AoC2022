@@ -7,6 +7,22 @@
 #include "day07.hpp"
 #include "day08.hpp"
 #include "day09.hpp"
+#include "day10.hpp"
+#include "day11.hpp"
+#include "day12.hpp"
+#include "day13.hpp"
+#include "day14.hpp"
+#include "day15.hpp"
+#include "day16.hpp"
+#include "day17.hpp"
+#include "day18.hpp"
+#include "day19.hpp"
+#include "day20.hpp"
+#include "day21.hpp"
+#include "day22.hpp"
+#include "day23.hpp"
+#include "day24.hpp"
+#include "day25.hpp"
 
 int main()
 {
@@ -64,5 +80,81 @@ int main()
 
     // Day 10
     // std::cout << "\n---------------- Day 10 ----------------" << std::endl;
+    // std::cout << day10::part1("../Inputs/input10.txt") << std::endl;
+    // std::cout << day10::part2("../Inputs/input10.txt") << std::endl;
 
+    // Day 11
+    // std::cout << "\n---------------- Day 11 ----------------" << std::endl;
+    // std::cout << day11::part1("../Inputs/input11.txt") << std::endl;
+    // std::cout << day11::part2("../Inputs/input11.txt") << std::endl;
+
+    // Day 12
+    // std::cout << "\n---------------- Day 12 ----------------" << std::endl;
+    // std::cout << day12::part1("../Inputs/input12.txt") << std::endl;
+    // std::cout << day12::part2("../Inputs/input12.txt") << std::endl;
+
+    // Day 13
+    // std::cout << "\n---------------- Day 13 ----------------" << std::endl;
+    // std::cout << day13::part1("../Inputs/input13.txt") << std::endl;
+    // std::cout << day13::part2("../Inputs/input13.txt") << std::endl;
+
+    // Day 14
+    // std::cout << "\n---------------- Day 14 ----------------" << std::endl;
+    // std::cout << day14::part1("../Inputs/input14.txt") << std::endl;
+    // std::cout << day14::part2("../Inputs/input14.txt") << std::endl;
+
+    // Day 15
+    // std::cout << "\n---------------- Day 15 ----------------" << std::endl;
+    // std::cout << day15::part1("../Inputs/input15.txt") << std::endl;
+    // std::cout << day15::part2("../Inputs/input15.txt") << std::endl;
+
+    // Day 16
+    // std::cout << "\n---------------- Day 16 ----------------" << std::endl;
+    // std::cout << day16::part1("../Inputs/input16.txt") << std::endl;
+    // std::cout << day16::part2("../Inputs/input16.txt") << std::endl;
+
+    // Day 17
+    // std::cout << "\n---------------- Day 17 ----------------" << std::endl;
+    // std::cout << day17::part1("../Inputs/input17.txt") << std::endl;
+    // std::cout << day17::part2("../Inputs/input17.txt") << std::endl;
+
+    // Day 18
+    // std::cout << "\n---------------- Day 18 ----------------" << std::endl;
+    // std::cout << day18::part1("../Inputs/input18.txt") << std::endl;
+    // std::cout << day18::part2("../Inputs/input18.txt") << std::endl;
+
+    // Day 19
+    // std::cout << "\n---------------- Day 19 ----------------" << std::endl;
+    // std::cout << day19::part1("../Inputs/input19.txt") << std::endl;
+    // std::cout << day19::part2("../Inputs/input19.txt") << std::endl;
+
+    // Day 20
+    // std::cout << "\n---------------- Day 20 ----------------" << std::endl;
+    // std::cout << day20::part1("../Inputs/input20.txt") << std::endl;
+    // std::cout << day20::part2("../Inputs/input20.txt") << std::endl;
+
+    // Day 21
+    // std::cout << "\n---------------- Day 21 ----------------" << std::endl;
+    // std::cout << day21::part1("../Inputs/input21.txt") << std::endl;
+    // std::cout << day21::part2("../Inputs/input21.txt") << std::endl;
+
+    // Day 22
+    // std::cout << "\n---------------- Day 22 ----------------" << std::endl;
+    // std::cout << day22::part1("../Inputs/input22.txt") << std::endl;
+    // std::cout << day22::part2("../Inputs/input22.txt") << std::endl;
+
+    // Day 23
+    // std::cout << "\n---------------- Day 23 ----------------" << std::endl;
+    // std::cout << day23::part1("../Inputs/input23.txt") << std::endl;
+    // std::cout << day23::part2("../Inputs/input23.txt") << std::endl;
+
+    // Day 24
+    // std::cout << "\n---------------- Day 24 ----------------" << std::endl;
+    // std::cout << day24::part1("../Inputs/input24.txt") << std::endl;
+    // std::cout << day24::part2("../Inputs/input24.txt") << std::endl;
+
+    // Day 25
+    // std::cout << "\n---------------- Day 25 ----------------" << std::endl;
+    // std::cout << day25::part1("../Inputs/input25.txt") << std::endl;
+    // std::cout << day25::part2("../Inputs/input25.txt") << std::endl;
 }
