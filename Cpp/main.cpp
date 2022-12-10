@@ -76,9 +76,10 @@ int main()
     std::cout << day09::part2("../Inputs/input09.txt") << std::endl;
 
     // Day 10
-    // std::cout << "\n---------------- Day 10 ----------------" << std::endl;
-    // std::cout << day10::part1("../Inputs/input10.txt") << std::endl;
-    // std::cout << day10::part2("../Inputs/input10.txt") << std::endl;
+    std::cout << "\n---------------- Day 10 ----------------" << std::endl;
+    std::vector<int> register_entries = day10::parse_input("../Inputs/input10.txt");
+    std::cout << day10::part1(register_entries) << std::endl;
+    std::cout << day10::part2(register_entries) << std::endl; // BPJAZGAP
 
     // Day 11
     // std::cout << "\n---------------- Day 11 ----------------" << std::endl;

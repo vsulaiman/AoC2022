@@ -5,10 +5,12 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <sstream>
 
 namespace day10 {
-    int part1(std::string input);
-    int part2(std::string input);
+    std::vector<int> parse_input(std::string input);
+    int part1(std::vector<int> &register_entries);
+    std::string part2(std::vector<int> &register_entries);
 }
 
 #endif // DAY10_HPP
