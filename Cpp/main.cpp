@@ -24,68 +24,174 @@
 #include "day24.hpp"
 #include "day25.hpp"
 
+#include <chrono>
+
+double duration_ms(std::chrono::high_resolution_clock::time_point start, std::chrono::high_resolution_clock::time_point end)
+{
+    return std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count() / 1000000.;
+}
+
 int main()
 {
+    using clock = std::chrono::high_resolution_clock;
+    clock::time_point start = clock::now();
+    double duration_parse, duration_part1, duration_part2;
+
     // Day 01
     std::cout << "---------------- Day 01 ----------------" << std::endl;
+    start = clock::now();
     std::vector<int> calories = day01::sum_calories("../Inputs/input01.txt");
+    duration_parse = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << "Most calories one elf carries: " << day01::part1(calories) << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << "Sum of calories the top 3 elves carry: " << day01::part2(calories) << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to parse input: " << duration_parse << " ms" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 02
     std::cout << "\n---------------- Day 02 ----------------" << std::endl;
+    start = clock::now();
     std::cout << day02::part1("../Inputs/input02.txt") << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day02::part2("../Inputs/input02.txt") << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 03
     std::cout << "\n---------------- Day 03 ----------------" << std::endl;
+    start = clock::now();
     std::cout << day03::part1("../Inputs/input03.txt") << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day03::part2("../Inputs/input03.txt") << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 04
     std::cout << "\n---------------- Day 04 ----------------" << std::endl;
+    start = clock::now();
     std::cout << day04::part1("../Inputs/input04.txt") << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day04::part2("../Inputs/input04.txt") << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 05
     std::cout << "\n---------------- Day 05 ----------------" << std::endl;
+    start = clock::now();
     std::vector<std::vector<char>> stacks = day05::get_stacks("../Inputs/input05.txt");
+    duration_parse = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day05::part1("../Inputs/input05.txt", stacks) << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day05::part2("../Inputs/input05.txt", stacks) << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to parse input: " << duration_parse << " ms" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 06
     std::cout << "\n---------------- Day 06 ----------------" << std::endl;
+    start = clock::now();
     std::cout << day06::part1("../Inputs/input06.txt") << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day06::part2("../Inputs/input06.txt") << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 07
     std::cout << "\n---------------- Day 07 ----------------" << std::endl;
+    start = clock::now();
     std::map<std::string, int> folder_sizes = day07::parse_input("../Inputs/input07.txt");
+    duration_parse = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day07::part1(folder_sizes) << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day07::part2(folder_sizes) << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to parse input: " << duration_parse << " ms" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 08
     std::cout << "\n---------------- Day 08 ----------------" << std::endl;
+    start = clock::now();
     std::vector<std::vector<int>> grid = day08::parse_input("../Inputs/input08.txt");
+    duration_parse = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day08::part1(grid) << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day08::part2(grid) << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to parse input: " << duration_parse << " ms" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 09
     std::cout << "\n---------------- Day 09 ----------------" << std::endl;
+    start = clock::now();
     std::cout << day09::part1("../Inputs/input09.txt") << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day09::part2("../Inputs/input09.txt") << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 10
     std::cout << "\n---------------- Day 10 ----------------" << std::endl;
+    start = clock::now();
     std::vector<int> register_entries = day10::parse_input("../Inputs/input10.txt");
+    duration_parse = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day10::part1(register_entries) << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day10::part2(register_entries) << std::endl; // BPJAZGAP
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to parse input: " << duration_parse << " ms" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 11
     std::cout << "\n---------------- Day 11 ----------------" << std::endl;
+    start = clock::now();
     std::vector<day11::Monkey> monkeys = day11::parseInput("../Inputs/input11.txt");
+    duration_parse = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day11::part1(monkeys) << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
     std::cout << day11::part2(monkeys) << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to parse input: " << duration_parse << " ms" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 12
     // std::cout << "\n---------------- Day 12 ----------------" << std::endl;

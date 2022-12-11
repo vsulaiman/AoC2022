@@ -1,38 +1,69 @@
 ---------------- Day 01 ----------------
 Most calories one elf carries: 69626
 Sum of calories the top 3 elves carry: 206780
+---
+Time to parse input: 0.433 ms
+Time to solve part 1: 0.0205 ms
+Time to solve part 2: 0.0074 ms
 
 ---------------- Day 02 ----------------
 13675
 14184
+---
+Time to solve part 1: 0.4877 ms
+Time to solve part 2: 0.4473 ms
 
 ---------------- Day 03 ----------------
 7903
 2548
+---
+Time to solve part 1: 0.3653 ms
+Time to solve part 2: 0.3122 ms
 
 ---------------- Day 04 ----------------
 444
 801
+---
+Time to solve part 1: 0.3013 ms
+Time to solve part 2: 0.2903 ms
 
 ---------------- Day 05 ----------------
 FWSHSPJWM
 PWPWHGFZS
+---
+Time to parse input: 0.1723 ms
+Time to solve part 1: 0.2593 ms
+Time to solve part 2: 0.2212 ms
 
 ---------------- Day 06 ----------------
 1707
 3697
+---
+Time to solve part 1: 0.1908 ms
+Time to solve part 2: 0.2275 ms
 
 ---------------- Day 07 ----------------
 1792222
 1112963
+---
+Time to parse input: 0.619 ms
+Time to solve part 1: 0.011 ms
+Time to solve part 2: 0.007 ms
 
 ---------------- Day 08 ----------------
 1672
 327180
+---
+Time to parse input: 0.2213 ms
+Time to solve part 1: 3.7476 ms
+Time to solve part 2: 0.254 ms
 
 ---------------- Day 09 ----------------
 6406
 2643
+---
+Time to solve part 1: 1.6843 ms
+Time to solve part 2: 1.3572 ms
 
 ---------------- Day 10 ----------------
 15140
@@ -43,7 +74,15 @@ PWPWHGFZS
 #..#.#....#..#.#..#.#....#..#.#..#.#....
 ###..#.....##..#..#.####..###.#..#.#....
 
+---
+Time to parse input: 0.3331 ms
+Time to solve part 1: 0.0187 ms
+Time to solve part 2: 0.0205 ms
 
 ---------------- Day 11 ----------------
 113232
 29703395016
+---
+Time to parse input: 0.189 ms
+Time to solve part 1: 0.0271 ms
+Time to solve part 2: 14.4166 ms
