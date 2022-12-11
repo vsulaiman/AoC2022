@@ -18,6 +18,7 @@ namespace day11 {
         std::function<int(int)> worry_test;
         int number_inspections;
         int reduce_by;
+        long int inspectNextItem();
     public:
         Monkey(std::vector<int> m_items, std::function<long int(long int)> m_inspection_function, std::function<int(int)> m_worry_test);
         void addItem(int m_item);

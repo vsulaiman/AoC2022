@@ -17,31 +17,27 @@ namespace day11 {
     {
         return this->items.size() > 0;
     }
-    std::pair<int, int> Monkey::throwNextItem_v1()
+    long int Monkey::inspectNextItem()
     {
         if (!this->hasItems())
         {
             std::cout << "Error: Monkey has no items" << std::endl;
-            return std::make_pair(0, 0);
+            return 0;
         }
         this->number_inspections++;
-        int item = this->items.front();
+        long int item = this->items.front();
         this->items.erase(this->items.begin());
         item = this->inspection_function(item);
-        item /= 3;
+        return item;
+    }
+    std::pair<int, int> Monkey::throwNextItem_v1()
+    {
+        long int item = this->inspectNextItem() / 3;
         return std::make_pair(this->worry_test(item), item);
     }
     std::pair<int, int> Monkey::throwNextItem_v2()
     {
-        if (!this->hasItems())
-        {
-            std::cout << "Error: Monkey has no items" << std::endl;
-            return std::make_pair(0, 0);
-        }
-        this->number_inspections++;
-        int item = this->items.front();
-        this->items.erase(this->items.begin());
-        item = this->inspection_function(item) % this->reduce_by;
+        long int item = this->inspectNextItem() % this->reduce_by;
         return std::make_pair(this->worry_test(item), item);
     }
     std::vector<int> Monkey::getItems()
