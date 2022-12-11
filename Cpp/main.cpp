@@ -85,7 +85,7 @@ int main()
     std::cout << "\n---------------- Day 11 ----------------" << std::endl;
     std::vector<day11::Monkey> monkeys = day11::parseInput("../Inputs/input11.txt");
     std::cout << day11::part1(monkeys) << std::endl;
-    // std::cout << day11::part2("../Inputs/input11.txt") << std::endl;
+    std::cout << day11::part2(monkeys) << std::endl;
 
     // Day 12
     // std::cout << "\n---------------- Day 12 ----------------" << std::endl;
