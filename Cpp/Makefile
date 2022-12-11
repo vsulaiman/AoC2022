@@ -8,7 +8,7 @@ SRCS = main.cpp
 SRCS += $(wildcard solutions/src/*.cpp)
 OBJS=$(addprefix build/, $(subst .cpp,.o,$(SRCS)))
 
-NUM_LIST := $(shell seq 1 10)
+NUM_LIST := $(shell seq 1 11)
 INPUTS := $(foreach n, $(NUM_LIST), $(shell printf '../Inputs/input%02d.txt' $(n)))
 
 all: build/main $(INPUTS) | build/solutions/src
@@ -17,7 +17,7 @@ all: build/main $(INPUTS) | build/solutions/src
 build/main: $(OBJS) | build
 	$(CXX) $(INCLUDEFLAGS) -o build/main $(OBJS) $(CXXFLAGS) $(LDLIBS)
 
-build/%.o: %.cpp | build
+build/%.o: %.cpp $(subst solutions/src/, solutions/, $(addsuffix .hpp,$*)) | build
 	$(CXX) $(INCLUDEFLAGS) $< -o $@ -c $(CXXFLAGS)
 
 ../Inputs/input%.txt: build/download_inputs | ../Inputs
