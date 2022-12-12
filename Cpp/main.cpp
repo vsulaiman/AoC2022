@@ -194,9 +194,22 @@ int main()
     std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 12
-    // std::cout << "\n---------------- Day 12 ----------------" << std::endl;
-    // std::cout << day12::part1("../Inputs/input12.txt") << std::endl;
-    // std::cout << day12::part2("../Inputs/input12.txt") << std::endl;
+    std::cout << "\n---------------- Day 12 ----------------" << std::endl;
+    start = clock::now();
+    std::pair<int, int> pos_start;
+    std::pair<int, int> pos_end;
+    std::vector<std::vector<day12::Square>> grid_d12 = day12::parseInput("../Inputs/input12.txt", pos_start, pos_end);
+    duration_parse = duration_ms(start, clock::now());
+    start = clock::now();
+    std::cout << day12::part1(grid_d12, pos_start, pos_end) << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
+    std::cout << day12::part2(grid_d12, pos_end) << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to parse input: " << duration_parse << " ms" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 13
     // std::cout << "\n---------------- Day 13 ----------------" << std::endl;
