@@ -71,7 +71,7 @@ namespace day12 {
                     }
                 }
             }
-            std::sort(queue.begin(), queue.end(), std::bind(compareDistance, grid, std::placeholders::_1, std::placeholders::_2));
+            // std::sort(queue.begin(), queue.end(), std::bind(compareDistance, grid, std::placeholders::_1, std::placeholders::_2));
         }
         return grid[end.first][end.second].distance;
     }
@@ -106,7 +106,7 @@ namespace day12 {
                     }
                 }
             }
-            std::sort(queue.begin(), queue.end(), std::bind(compareDistance, grid, std::placeholders::_1, std::placeholders::_2));
+            // std::sort(queue.begin(), queue.end(), std::bind(compareDistance, grid, std::placeholders::_1, std::placeholders::_2));
         }
         return grid[current.first][current.second].distance;
     }
