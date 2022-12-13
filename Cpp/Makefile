@@ -1,6 +1,6 @@
 CXX = g++
 INCLUDEFLAGS = -I solutions/ -I/usr/local/opt/openssl@3/include
-LDLIBS = -lssl -lcrypto
+LDLIBS = -lssl -lcrypto -ldl
 CXXFLAGS = $(WARNINGS) -std=c++17 $(OPT)
 WARNINGS = -Wall -Wno-sign-compare
 OPT = -march=native -O3
