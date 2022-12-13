@@ -172,6 +172,20 @@ namespace day13 {
             packets.push_back(line);
         }
         std::sort(packets.begin(), packets.end(), isSmaller);
-        return 0;
+        int index = 1;
+        int result = 1;
+        for (auto element : packets)
+        {
+            if (element == "[[2]]")
+            {
+                result *= index;
+            }
+            if (element == "[[6]]")
+            {
+                result *= index;
+            }
+            index++;
+        }
+        return result;
     }
 }
