@@ -116,6 +116,10 @@ namespace day13 {
         if (right.size() == 0 && left.size() != 0) { return -1; }
         return result;
     }
+    bool isSmaller(std::string left, std::string right)
+    {
+        return compareLists(splitList(left), splitList(right)) == 1;
+    }
     int part1(std::string input)
     {
         std::ifstream f;
@@ -161,10 +165,13 @@ namespace day13 {
         std::ifstream f;
         f.open(input);
         std::string line;
+        std::vector<std::string> packets = {"[[2]]", "[[6]]"};
         while (std::getline(f, line))
         {
-
+            if (line.empty()) { continue; }
+            packets.push_back(line);
         }
+        std::sort(packets.begin(), packets.end(), isSmaller);
         return 0;
     }
 }

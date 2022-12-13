@@ -17,7 +17,7 @@ all: build/main $(INPUTS) | build/solutions/src
 build/main: $(OBJS) | build
 	$(CXX) $(INCLUDEFLAGS) -o build/main $(OBJS) $(CXXFLAGS) $(LDLIBS)
 
-build/%.o: %.cpp $(subst solutions/src/, solutions/, $(addsuffix .hpp,$*)) | build
+build/%.o: %.cpp $(subst solutions/src/, solutions/, $(addsuffix .hpp,$*)) | build/solutions/src
 	$(CXX) $(INCLUDEFLAGS) $< -o $@ -c $(CXXFLAGS)
 
 ../Inputs/input%.txt: build/download_inputs | ../Inputs
