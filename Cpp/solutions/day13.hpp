@@ -7,6 +7,7 @@
 #include <vector>
 
 namespace day13 {
+    std::vector<std::string> splitList(std::string input);
     int part1(std::string input);
     int part2(std::string input);
 }
