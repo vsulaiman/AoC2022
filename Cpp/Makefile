@@ -8,7 +8,7 @@ SRCS = main.cpp
 SRCS += $(wildcard solutions/src/*.cpp)
 OBJS=$(addprefix build/, $(subst .cpp,.o,$(SRCS)))
 
-NUM_LIST := $(shell seq 1 13)
+NUM_LIST := $(shell seq 1 14)
 INPUTS := $(foreach n, $(NUM_LIST), $(shell printf '../Inputs/input%02d.txt' $(n)))
 
 all: build/main $(INPUTS) | build/solutions/src

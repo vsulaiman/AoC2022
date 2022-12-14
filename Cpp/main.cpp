@@ -224,8 +224,11 @@ int main()
     std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 14
-    // std::cout << "\n---------------- Day 14 ----------------" << std::endl;
-    // std::cout << day14::part1("../Inputs/input14.txt") << std::endl;
+    std::cout << "\n---------------- Day 14 ----------------" << std::endl;
+    // std::string test = "123,456";
+    // std::string::size_type sz;
+    // std::cout << std::stoi(test, &sz) << " " << test.substr(sz+1) << std::endl;
+    std::cout << day14::part1("../Inputs/test14.txt") << std::endl;
     // std::cout << day14::part2("../Inputs/input14.txt") << std::endl;
 
     // Day 15

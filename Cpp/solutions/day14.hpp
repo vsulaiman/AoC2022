@@ -5,6 +5,8 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <set>
+#include <utility>
 
 namespace day14 {
     int part1(std::string input);
