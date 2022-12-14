@@ -2,68 +2,68 @@
 Most calories one elf carries: 69626
 Sum of calories the top 3 elves carry: 206780
 ---
-Time to parse input: 0.3432 ms
-Time to solve part 1: 0.0135 ms
-Time to solve part 2: 0.005 ms
+Time to parse input: 0.494146 ms
+Time to solve part 1: 0.02076 ms
+Time to solve part 2: 0.006466 ms
 
 ---------------- Day 02 ----------------
 13675
 14184
 ---
-Time to solve part 1: 0.3698 ms
-Time to solve part 2: 0.3581 ms
+Time to solve part 1: 0.846058 ms
+Time to solve part 2: 0.882342 ms
 
 ---------------- Day 03 ----------------
 7903
 2548
 ---
-Time to solve part 1: 0.1902 ms
-Time to solve part 2: 0.1889 ms
+Time to solve part 1: 0.17506 ms
+Time to solve part 2: 0.357968 ms
 
 ---------------- Day 04 ----------------
 444
 801
 ---
-Time to solve part 1: 0.3078 ms
-Time to solve part 2: 0.2589 ms
+Time to solve part 1: 0.838628 ms
+Time to solve part 2: 0.942429 ms
 
 ---------------- Day 05 ----------------
 FWSHSPJWM
 PWPWHGFZS
 ---
-Time to parse input: 0.1403 ms
-Time to solve part 1: 0.2213 ms
-Time to solve part 2: 0.1951 ms
+Time to parse input: 0.052659 ms
+Time to solve part 1: 0.505029 ms
+Time to solve part 2: 0.464203 ms
 
 ---------------- Day 06 ----------------
 1707
 3697
 ---
-Time to solve part 1: 0.1727 ms
-Time to solve part 2: 0.2044 ms
+Time to solve part 1: 0.448098 ms
+Time to solve part 2: 0.619387 ms
 
 ---------------- Day 07 ----------------
 1792222
 1112963
 ---
-Time to parse input: 0.5852 ms
-Time to solve part 1: 0.0118 ms
-Time to solve part 2: 0.0065 ms
+Time to parse input: 1.55059 ms
+Time to solve part 1: 0.01362 ms
+Time to solve part 2: 0.007576 ms
 
 ---------------- Day 08 ----------------
 1672
 327180
 ---
-Time to parse input: 0.2358 ms
-Time to solve part 1: 3.9948 ms
-Time to solve part 2: 0.2622 ms
+Time to parse input: 0.169809 ms
+Time to solve part 1: 2.38936 ms
+Time to solve part 2: 0.672371 ms
 
 ---------------- Day 09 ----------------
 6406
 2643
 ---
-Time to solve part 1: 1.7629 ms
-Time to solve part 2: 1.3396 ms
+Time to solve part 1: 4.10487 ms
+Time to solve part 2: 2.57645 ms
 
 ---------------- Day 10 ----------------
 15140
@@ -75,33 +75,36 @@ Time to solve part 2: 1.3396 ms
 ###..#.....##..#..#.####..###.#..#.#....
 
 ---
-Time to parse input: 0.1798 ms
-Time to solve part 1: 0.0077 ms
-Time to solve part 2: 0.0157 ms
+Time to parse input: 0.09896 ms
+Time to solve part 1: 0.184735 ms
+Time to solve part 2: 0.013218 ms
 
 ---------------- Day 11 ----------------
 113232
 29703395016
 ---
-Time to parse input: 0.155 ms
-Time to solve part 1: 0.0264 ms
-Time to solve part 2: 11.9976 ms
+Time to parse input: 0.048016 ms
+Time to solve part 1: 0.036595 ms
+Time to solve part 2: 18.4397 ms
 
 ---------------- Day 12 ----------------
 481
 480
 ---
-Time to parse input: 0.3264 ms
-Time to solve part 1: 0.3962 ms
-Time to solve part 2: 0.2016 ms
+Time to parse input: 0.101314 ms
+Time to solve part 1: 0.295662 ms
+Time to solve part 2: 0.405378 ms
 
 ---------------- Day 13 ----------------
 6272
 22288
 ---
-Time to solve part 1: 0.4847 ms
-Time to solve part 2: 4.6654 ms
+Time to solve part 1: 0.472354 ms
+Time to solve part 2: 9.28257 ms
 
 ---------------- Day 14 ----------------
-(494,503) & 9
-0
+825
+26729
+---
+Time to solve part 1: 3.29244 ms
+Time to solve part 2: 181.2 ms

@@ -9,6 +9,7 @@
 #include <utility>
 
 namespace day14 {
+    int sgn(int val);
     int part1(std::string input);
     int part2(std::string input);
 }

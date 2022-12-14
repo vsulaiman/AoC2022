@@ -225,11 +225,15 @@ int main()
 
     // Day 14
     std::cout << "\n---------------- Day 14 ----------------" << std::endl;
-    // std::string test = "123,456";
-    // std::string::size_type sz;
-    // std::cout << std::stoi(test, &sz) << " " << test.substr(sz+1) << std::endl;
-    std::cout << day14::part1("../Inputs/test14.txt") << std::endl;
-    // std::cout << day14::part2("../Inputs/input14.txt") << std::endl;
+    start = clock::now();
+    std::cout << day14::part1("../Inputs/input14.txt") << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
+    std::cout << day14::part2("../Inputs/input14.txt") << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 15
     // std::cout << "\n---------------- Day 15 ----------------" << std::endl;
