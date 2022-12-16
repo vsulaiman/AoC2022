@@ -250,9 +250,21 @@ int main()
     std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 16
-    // std::cout << "\n---------------- Day 16 ----------------" << std::endl;
-    // std::cout << day16::part1("../Inputs/input16.txt") << std::endl;
-    // std::cout << day16::part2("../Inputs/input16.txt") << std::endl;
+    std::cout << "\n---------------- Day 16 ----------------" << std::endl;
+    start = clock::now();
+    std::unordered_map<std::string, day16::Valve> valves = day16::parseInput("../Inputs/input16.txt");
+    floyd_warshall(valves);
+    duration_parse = duration_ms(start, clock::now());
+    start = clock::now();
+    std::cout << day16::part1(valves) << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
+    std::cout << day16::part2(valves) << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to parse input: " << duration_parse << " ms" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 17
     // std::cout << "\n---------------- Day 17 ----------------" << std::endl;
