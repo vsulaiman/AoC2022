@@ -243,7 +243,7 @@ int main()
     duration_part1 = duration_ms(start, clock::now());
     start = clock::now();
     // std::cout << day15::part2("../Inputs/test15.txt", 20) << std::endl;
-    std::cout << day15::part2("../Inputs/input15.txt", 4000000) << std::endl;
+    // std::cout << day15::part2("../Inputs/input15.txt", 4000000) << std::endl;
     duration_part2 = duration_ms(start, clock::now());
     std::cout << "---" << std::endl;
     std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
@@ -279,9 +279,16 @@ int main()
     std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 18
-    // std::cout << "\n---------------- Day 18 ----------------" << std::endl;
-    // std::cout << day18::part1("../Inputs/input18.txt") << std::endl;
-    // std::cout << day18::part2("../Inputs/input18.txt") << std::endl;
+    std::cout << "\n---------------- Day 18 ----------------" << std::endl;
+    start = clock::now();
+    std::cout << day18::part1("../Inputs/input18.txt") << std::endl;
+    duration_part1 = duration_ms(start, clock::now());
+    start = clock::now();
+    std::cout << day18::part2("../Inputs/input18.txt") << std::endl;
+    duration_part2 = duration_ms(start, clock::now());
+    std::cout << "---" << std::endl;
+    std::cout << "Time to solve part 1: " << duration_part1 << " ms" << std::endl;
+    std::cout << "Time to solve part 2: " << duration_part2 << " ms" << std::endl;
 
     // Day 19
     // std::cout << "\n---------------- Day 19 ----------------" << std::endl;
